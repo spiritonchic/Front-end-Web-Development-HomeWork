@@ -94,6 +94,21 @@
     align-items: center;
     text-align: center;
   }
+  .comics {
+    font-family: "Permanent Marker", cursive;
+    font-size: 4vh;
+    margin-top: 5%;
+    background-color: #1c1a1d;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7vh;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   .row1 {
     display: flex;
@@ -168,4 +183,19 @@
   }
   .window1 {
     background-color: #232124;
+  }
+
+  .comic-img {
+    width: 50vh;
+    height: auto;
+  }
+
+  .comics-text {
+    font-family: "Kalam", cursive;
+    font-size: 3vh;
+    color: white;
+    padding-top: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 1%;
   }
