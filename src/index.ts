@@ -1,4 +1,5 @@
 import DOMPurify from "dompurify"
+import { formatDistanceToNow } from 'date-fns';
 
 interface comicsResponse {
     img: string;
@@ -39,7 +40,8 @@ const changeData: (data: comicsResponse) => void = async (data: comicsResponse) 
     img.src = data.img
     img.alt = secureData(data.alt)
     title.textContent = secureData(data.title)
-    date.textContent = new Date(Number(secureData(String(data.year))), Number(secureData(String(data.month))) - 1, Number(secureData(String(data.day)))).toLocaleDateString()
+    const date_: Date = new Date(Number(secureData(String(data.year))), Number(secureData(String(data.month))) - 1, Number(secureData(String(data.day))))
+    date.textContent = date_.toLocaleDateString() + " — " + formatDistanceToNow(date_, { addSuffix: true });
 
 }
 
