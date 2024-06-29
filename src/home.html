@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Comics</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.5/purify.min.js"></script>
-        <script type="module" src="./src/index.ts"></script>
     </head>
     <body>
         <header class="header">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./comics.html">Comics</a></li>
+                    <li><a href="./src/home.html">Home</a></li>
+                    <li><a href="./src/skills.html">Skills</a></li>
+                    <li><a href="./src/projects.html">Projects</a></li>
+                    <li><a href="./src/comics.html">Comics</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="comics">
-            <p class="head-text">Comics</p>
-            <p id="comic-title" class="comics-text"></p>
-            <img id="comic-img" class="comic-img" src="./src/assets/img/loading.gif" alt="Loading...">
-            <p id="comic-date" class="comics-text"></p>
+        <div class="home">
+            <p class="head-text">Ivan Ershov</p>
+            <div class="image">
+                <img src="./src/assets/img/me.png" alt="Ivan Ershov" class="img-me">
+            </div>
+            <div class="home-text">
+                <p>
+                    Hi, I'm a student from Innopolis University! I enjoy programming in Java and Python. If you'd like, you can check out my projects or say hello to me on Telegram!
+                </p>
+            </div>
         </div>
         <div class="social-icons">
             <a href="https://t.me/spiritonchic" target="_blank" id="tg-link">
