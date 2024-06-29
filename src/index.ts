@@ -48,3 +48,5 @@ const id: number = await getID();
 const data = await getComicsData(id);
 
 changeData(data);
+
+console.log(id);
