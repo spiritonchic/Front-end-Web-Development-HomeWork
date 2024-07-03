@@ -11,10 +11,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
-        comics: resolve(__dirname, 'comics.html'),
-        home: resolve(__dirname, 'home.html'),
-        skills: resolve(__dirname, 'skills.html'),
-        projects: resolve(__dirname, 'projects.html')
       }
     }
   },
