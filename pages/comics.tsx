@@ -38,6 +38,11 @@ const Comics: React.FC<ComicsProps> = ({ comicData }) => {
     comicData.day,
   );
 
+  const res: string =
+    date_.toLocaleDateString() +
+    " — " +
+    formatDistanceToNow(date_, { addSuffix: true });
+
   return (
     <div className="comics">
       <p className="head-text">Comics</p>
@@ -53,9 +58,7 @@ const Comics: React.FC<ComicsProps> = ({ comicData }) => {
         height={comicData.height}
       />
       <p id="comic-date" className="comics-text">
-        {date_.toLocaleDateString() +
-          " — " +
-          formatDistanceToNow(date_, { addSuffix: true })}
+        {res}
       </p>
     </div>
   );
