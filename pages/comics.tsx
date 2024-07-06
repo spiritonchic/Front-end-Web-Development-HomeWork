@@ -4,6 +4,7 @@ import Image from "next/image";
 import { GetStaticProps } from "next";
 import { ISizeCalculationResult } from "image-size/dist/types/interface";
 import sizeOf from "image-size";
+import { formatDistanceToNow } from "date-fns";
 
 interface ComicsProps {
   comicData: comicsResponse;
@@ -31,6 +32,12 @@ const Comics: React.FC<ComicsProps> = ({ comicData }) => {
   const secureTitle = secureData(comicData.title);
   const secureAlt = secureData(comicData.alt);
 
+  const date_: Date = new Date(
+    comicData.year,
+    comicData.month - 1,
+    comicData.day,
+  );
+
   return (
     <div className="comics">
       <p className="head-text">Comics</p>
@@ -45,10 +52,11 @@ const Comics: React.FC<ComicsProps> = ({ comicData }) => {
         width={comicData.width}
         height={comicData.height}
       />
-      <p
-        id="comic-date"
-        className="comics-text"
-      >{`${comicData.year}-${comicData.month}-${comicData.day}`}</p>
+      <p id="comic-date" className="comics-text">
+        {date_.toLocaleDateString() +
+          " — " +
+          formatDistanceToNow(date_, { addSuffix: true })}
+      </p>
     </div>
   );
 };

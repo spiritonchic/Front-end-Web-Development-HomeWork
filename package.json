@@ -11,6 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "date-fns": "^3.6.0",
     "dompurify": "^3.1.6",
     "fs": "^0.0.1-security",
     "image-size": "^1.1.1",
