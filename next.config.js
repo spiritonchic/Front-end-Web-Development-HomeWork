@@ -5,6 +5,7 @@ const nextConfig = {
   assetPrefix: "/Front-end-Web-Development-HomeWork/",
   output: "export",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
