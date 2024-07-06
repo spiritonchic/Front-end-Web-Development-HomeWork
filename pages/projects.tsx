@@ -1,9 +1,9 @@
 import React from 'react';
-import ProjectItem from './ProjectItem';
-import starWarriorsLogo from '../assets/img/starWarriors.png';
-import earthWalkersLogo from '../assets/img/earthWalkers.png';
-import toGetHerLogo from '../assets/img/toGetHer.png';
-import frenaLogo from '../assets/img/frena.png';
+import ProjectItem from '../components/ProjectItem';
+import starWarriorsLogo from '../public/assets/img/starWarriors.png';
+import earthWalkersLogo from '../public/assets/img/earthWalkers.png';
+import toGetHerLogo from '../public/assets/img/toGetHer.png';
+import frenaLogo from '../public/assets/img/frena.png';
 
 const Projects: React.FC = () => (
   <div>

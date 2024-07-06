@@ -1,6 +1,6 @@
 import React from 'react';
-import ProfileImage from './ProfileImage';
-import HomeText from './HomeText';
+import ProfileImage from '../components/ProfileImage';
+import HomeText from '../components/HomeText';
 
 const Home: React.FC = () => (
   <div className="home">

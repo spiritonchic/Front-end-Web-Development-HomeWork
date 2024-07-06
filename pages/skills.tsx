@@ -1,10 +1,10 @@
 import React from 'react';
-import SkillItem from './SkillItem';
-import javaLogo from '../assets/img/java.png';
-import pythonLogo from '../assets/img/python.png';
-import cppLogo from '../assets/img/c++.png';
-import jsLogo from '../assets/img/js.png';
-import sqliteLogo from '../assets/img/sqlite.png';
+import SkillItem from '../components/SkillItem';
+import javaLogo from '../public/assets/img/java.png';
+import pythonLogo from '../public/assets/img/python.png';
+import cppLogo from '../public/assets/img/c++.png';
+import jsLogo from '../public/assets/img/js.png';
+import sqliteLogo from '../public/assets/img/sqlite.png';
 
 const Skills: React.FC = () => (
     <div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import SocialIcon from './SocialIcon';
 
-import telegramLogo from '../assets/img/telegram.png';
-import githubLogo from '../assets/img/github.png';
-import mailLogo from '../assets/img/mail.png';
-import codeforcesLogo from '../assets/img/codeforces.png';
+import telegramLogo from '../public/assets/img/telegram.png';
+import githubLogo from '../public/assets/img/github.png';
+import mailLogo from '../public/assets/img/mail.png';
+import codeforcesLogo from '../public/assets/img/codeforces.png';
 
 const SocialIcons: React.FC = () => (
     <div className="social-icons">

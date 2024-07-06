@@ -1,12 +1,13 @@
 import React from 'react';
+import Image, { StaticImageData } from "next/image";
 
 interface SkillItemProps {
-    src: string;
+    src: StaticImageData;
     alt: string;
 }
 
 const SkillItem: React.FC<SkillItemProps> = ({ src, alt }) => (
-    <img src={src} alt={alt} className="img-logo" />
+    <Image src={src} alt={alt} className="img-logo" />
 );
 
 export default SkillItem;
