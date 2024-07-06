@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: "/Front-end-Web-Development-HomeWork",
   assetPrefix: "/Front-end-Web-Development-HomeWork/",
+  output: "export",
   images: {
     remotePatterns: [
       {
