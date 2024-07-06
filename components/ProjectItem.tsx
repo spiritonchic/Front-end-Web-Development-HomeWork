@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface ProjectItemProps {
@@ -8,7 +8,12 @@ interface ProjectItemProps {
   title: string;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ href, imgSrc, imgAlt, title }) => (
+const ProjectItem: React.FC<ProjectItemProps> = ({
+  href,
+  imgSrc,
+  imgAlt,
+  title,
+}) => (
   <div>
     <a href={href} target="_blank">
       <p>{title}</p>

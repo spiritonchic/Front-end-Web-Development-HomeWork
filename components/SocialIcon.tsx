@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface SocialIconProps {
